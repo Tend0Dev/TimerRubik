@@ -1,0 +1,40 @@
+name: timer_rubik
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.3
+  provider: ^6.0.5
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/1.png
+    - assets/2.png
+    - assets/4.png
+    - assets/5.png
+    - assets/6.png
+    - assets/7.png
+    - assets/8.png
+    - assets/9.png
+    - assets/10.png
+    - assets/11.png
+    - assets/13.png
+    - assets/14.png
+    - assets/15.png
+    - assets/16.png
+    - assets/17.png
+    - assets/banner.jpeg
