@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.screen{
+  @apply min-h-[calc(100vh)]
+}
