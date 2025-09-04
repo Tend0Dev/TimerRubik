@@ -105,7 +105,3 @@ The timer uses sophisticated keyboard controls with visual feedback: [21](#1-20)
 **Notes**
 
 The application uses distributed Zustand stores for optimal performance, with separate state domains for timer, scrambles, and times. <cite/> The main layout employs CSS Grid with 3 columns to organize core functionalities. <cite/> The time table includes individual deletion functionality with interactive icons from the sprite system. [18](#1-17) 
-
-Wiki pages you might want to explore:
-- [Core Systems (Tend0Dev/TimerRubikWeb)](/wiki/Tend0Dev/TimerRubikWeb#4)
-- [Assets and Styling (Tend0Dev/TimerRubikWeb)](/wiki/Tend0Dev/TimerRubikWeb#8)
