@@ -1,4 +1,5 @@
-import { InstagramLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons"
+import { GitHubLogoIcon } from "@radix-ui/react-icons"
+import { IconCopyright } from '@tabler/icons-react';
 
 const year = new Date().getFullYear()
 
@@ -12,10 +13,8 @@ export default function Footer() {
             </a>
         
         </div>
-        <small className=" flex gap-1">
-            <svg className=" size-6 ">
-                <use href="/images/sprite.svg#copyright" />
-            </svg>
+        <small className=" flex gap-1 items-center">
+            <IconCopyright stroke={2} />
 
             <span className="font-bold "> {year}</span> 
             <span>RubikTimer is a free ad-free timer for speedcubers!
