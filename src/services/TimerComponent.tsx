@@ -19,9 +19,9 @@ const TimerComponent: React.FC<TimerProps> = () => {
   const [timerRunning, setTimerRunning] = useState(false);
   const [time, setTime] = useState<string>("0.00");
   const [initialTime, setInitialTime] = useState<number | null>(null);
-  const [finalTime, setFinalTime] = useState<number | null>(null);
+  const [, setFinalTime] = useState<number | null>(null);
   const [bufferKey, setBufferKey] = useState<string>("");
-  const [timesBuffer, setTimesBuffer] = useState<number>(0);
+  const [, setTimesBuffer] = useState<number>(0);
   const times = useTimesStore((state) => state.times);
   const addTime = useTimesStore((state) => state.addTime);
 
