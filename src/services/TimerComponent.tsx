@@ -14,7 +14,7 @@ export interface TimerProps {
 }
 
 // --- Component --------------------------------------------------------------
-const TimerComponent: React.FC<TimerProps> = ({ onNewScramble }) => {
+const TimerComponent: React.FC<TimerProps> = () => {
   const [isPrepared, setIsPrepared] = useState(false);
   const [timerRunning, setTimerRunning] = useState(false);
   const [time, setTime] = useState<string>("0.00");
@@ -143,14 +143,12 @@ const TimerComponent: React.FC<TimerProps> = ({ onNewScramble }) => {
   }, [timerRunning, isPrepared]);
 
   return (
-    <div className="w-full flex items-center justify-center py-10 select-none">
       <h1
-        className={`font-mono text-7xl md:text-8xl tracking-tight text-white${timerClass} ` +
+        className={`font-mono text-7xl md:text-8xl text-white text-center ${timerClass} ` +
           `${timerRunning ? "text-green-600" : isPrepared ? "text-yellow-500" : "text-gray-900"}`}
       >
         {time}
       </h1>
-    </div>
   );
 };
 

@@ -1,5 +1,7 @@
 @import "tailwindcss";
+@import 'tailwindcss';
+@import 'tailwind-animations';
 
-.screen{
-  @apply min-h-[calc(100vh)]
+:root {
+  --header-footer-height: 200px;
 }

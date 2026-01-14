@@ -43,6 +43,7 @@ export default function TimesChart() {
 
   const chartOptions = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: { display: true },
       title: { display: false },
@@ -59,8 +60,9 @@ export default function TimesChart() {
   };
 
   return (
-    <div className="mb-5">
+    <div className='min-w-full h-80 mb-3'>
       <Line data={chartData} options={chartOptions} />
     </div>
+    
   );
 }

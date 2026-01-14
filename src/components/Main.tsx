@@ -1,15 +1,28 @@
 import Averages from "./Averages";
-import List from "./List";
+import Table from "./Table";
+
 import Timer from "./Timer";
 
 
 export function Main() {
   return (
-    <div className="h-[calc(100vh-280px)] grid grid-cols-3 py-8 px-4 gap-2">
-        <Averages />
+    <div className=" grid xl:grid-cols-3 mx-4 flex-grow xl:min-h-[calc(100vh-var(--header-footer-height))]">
+
+      {/* Timer primero en mobile, segundo en xl */}
+      <div className="self-center h-50 order-1  xl:order-2 ">
         <Timer />
-        <List />
+      </div>
+
+      {/* Averages segundo en mobile, primero en xl */}
+      <div className="self-center mb-10 order-2 xl:order-1">
+        <Averages />
+      </div>
+
+      {/* List siempre al final */}
+      <div className=" self-center order-3 ">
+        <Table />
+      </div>
+
     </div>
   )
 }
-

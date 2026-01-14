@@ -5,11 +5,14 @@ import { Main } from "./components/Main"
 function App() {
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 flex flex-col items-between text-white">
-      <section className=" my-3 xl:w-[1170px]"></section>
+    <main className="min-h-screen flex flex-col bg-gradient-to-b from-gray-800 to-gray-900 text-white">
         <Header />
-        <Main />
-        <Footer />
+        <div className="mb-10">
+          <Main />
+        </div>
+        <div className="xl:absolute mb-3 bottom-0 w-full">
+          <Footer />
+        </div>
     </main>
   )
 }
